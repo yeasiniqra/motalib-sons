@@ -533,14 +533,15 @@ h5 {
 }
 
 .icon-sm i {
-	font-size: 35px;
+	font-size: 30px;
 	color: var(--secondary-text-color);
 	margin-right: 14px;
 }
 .icon-content strong {
 	display: block;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 .icon-content span {
 	font-size: 15px;
