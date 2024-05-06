@@ -571,7 +571,7 @@ h5 {
 }
 .download-btn a:hover {
 	background: var(--secondary-text-color);
-	background:#18d26e;
+	/* background:#18d26e; */
 	transition: 0.5s;
 }
 .download-btn a span:nth-child(1) {
@@ -584,6 +584,7 @@ h5 {
 	background: linear-gradient(to right, #171618, var(--secondary-text-color));
 	animation: animate1 2s linear infinite;
 }
+
 
 @keyframes animate1 {
 	0% {
