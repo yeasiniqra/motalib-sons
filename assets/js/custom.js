@@ -37,7 +37,7 @@ $(document).ready(function(){
 			}
 		})
 
-		/*********** complete project slide ***************/
+		/*********** partner project slide ***************/
 		$('.partner-main-grid').owlCarousel({
 			loop:true,
 			margin:false,
@@ -65,7 +65,7 @@ $(document).ready(function(){
 			}
 		})
 
-		/*********** complete project slide ***************/
+		/*********** testmonial project slide ***************/
 		$('.testmonial-main-grid').owlCarousel({
 			loop:true,
 			margin:false,
