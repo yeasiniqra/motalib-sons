@@ -997,6 +997,52 @@ h5 {
 	padding-bottom: 20px;
 }
 
+/************ Services Area Css *************/
+.services-main-grid {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 40px;
+	margin-top: 50px;
+}
+.services-single-item {
+	border: 1px solid #999;
+	text-align: center;
+	padding: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.services-single-item:hover{
+	background: var(--secondary-text-color);
+}
+
+.services-single-item img {
+	max-width: 100%;
+	height: 70px;
+}
+
+.service-btn {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.common-btn {
+	border: 2px solid var(--secondary-text-color);
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: 600;
+	background: var(--secondary-text-color);
+	color: #fff;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.common-btn:hover{
+	background: transparent;
+	color: #000;
+	transition: 0.5s;
+}
+
 
 /************ Footer Area Css *************/
 .footer-area {
@@ -1195,9 +1241,28 @@ h5 {
 	margin-top: 12px;
 }
 
+/************ Back to top Area Css *************/
+#backToTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--secondary-text-color);
+	color: white;
+	border: none;
+	border-radius: 100%;
+	cursor: pointer;
+	z-index: 99;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#backToTopBtn span i {
+	font-size: 20px;
+} 
 
-/************ Header Area Css *************/
-/************ Header Area Css *************/
+
 /************ Header Area Css *************/
 /************ Header Area Css *************/
 /************ Header Area Css *************/
