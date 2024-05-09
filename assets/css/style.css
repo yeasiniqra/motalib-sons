@@ -465,7 +465,7 @@ h5 {
    top: 58px;
    left: 0;
    z-index: 9;
-   min-width: 210px;
+   min-width: 150px;
    background: #fff;
    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -488,6 +488,13 @@ h5 {
    -webkit-transition: 0.6s;
    -o-transition: 0.6s;
    transition: 0.6s;
+}
+
+.main-menu > ul ul li {
+	border-bottom: 1px solid #ddd;
+}
+.main-menu > ul ul li:last-child {
+	border: none;
 }
 
 .main-menu > ul li:hover > ul {
@@ -818,6 +825,7 @@ h5 {
 	text-align: center;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .icon-boxX i {
 	font-size: 45px;
@@ -1003,15 +1011,15 @@ h5 {
 }
 .services-main-grid {
 	display: grid;
-	grid-template-columns: repeat(6,1fr);
+	grid-template-columns: repeat(5,1fr);
 	gap: 25px;
 	margin-top: 50px;
 }
 .services-single-item {
 	text-align: center;
 	transition: 0.5s;
-	width: 175px;
-	height: 175px;
+	width: 200px;
+	height: 200px;
 	text-align: center;
 	border-radius: 50%;
 	background: #fff;
@@ -1047,11 +1055,13 @@ h5 {
 
 .service-inner-item {
 	position: relative;
-	top: 30px;
+	top: 54px;
 }
 .services-single-item h5 {
 	font-size: 16px;
 	font-weight: 700;
+	width: 80%;
+	margin: 0 auto;
 	margin-top: 10px;
 }
 .services-single-item:hover img{
@@ -1136,6 +1146,20 @@ h5 {
 	margin-top: 40px;
 	padding: 15px 35px;
 }
+.about-left{
+	position: relative;
+}
+.about-left::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 10px;
+	left: -10px;
+	background-color: var(--secondary-text-color);
+	z-index: -1;
+}
+
 
 
 /************ Footer Area Css *************/
