@@ -6,11 +6,7 @@ html {
 	scroll-behavior: smooth;
 }
 :root {
-   --primary-bg: linear-gradient(270deg,#004e8c,#0078d4);
-   --primary-bg-reverse: linear-gradient(270deg, #0078d4, #004e8c);
-   --primary-green-bg: linear-gradient(270deg, #57D163, #24B43B );
-   --primary-text-color : #;
-   /* --secondary-text-color : #1B69B3; */
+   --primary-text-color : ;
    --secondary-text-color : #00A2E2;
    --font-family-primary : 'Space Grotesk', sans-serif;
    --body-bg : #ECF0F5;
@@ -1005,15 +1001,28 @@ h5 {
 	padding-bottom: 20px;
 }
 
+.testmonial-single-item small {
+	font-weight: 500;
+	display: block;
+	padding-bottom: 5px;
+	position: relative;
+	top: -10px;
+	font-size: 15px;
+	color: var(--secondary-text-color);
+}
+
+
 /************ Services Area Css *************/
 .our-service-area{
-	padding-top: 0px;
+	padding-top: 30px;
 }
 .services-main-grid {
 	display: grid;
 	grid-template-columns: repeat(5,1fr);
 	gap: 25px;
-	margin-top: 50px;
+	margin-top: 65px;
+	margin-bottom: 60px;
+	grid-row-gap: 30px;
 }
 .services-single-item {
 	text-align: center;
@@ -1103,9 +1112,15 @@ h5 {
 /************ About Area Css *************/
 .about-main-grid {
 	display: grid;
-	grid-template-columns: 5fr auto;
+	grid-template-columns: 5fr 7fr;
 	gap: 40px;
 	margin-top: 35px;
+	align-items: center;
+}
+.about-left img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 .about-right p {
 	color: #212121;
@@ -1160,6 +1175,10 @@ h5 {
 	z-index: -1;
 }
 
+.about-icon-sm img {
+	width: 50px;
+	height: auto;
+}
 
 
 /************ Footer Area Css *************/
@@ -1204,10 +1223,10 @@ h5 {
 	color: #999;
 	width: 100%;
 	text-align: justify;
-	font-size: 15px;
+	font-size: 14px;
 }
 .footer-content > a > img {
-	width: 85%;
+	max-width: 100%;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 10px;
