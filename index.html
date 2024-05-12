@@ -39,6 +39,7 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <div class="all-wapper">
         <!--===========================================
                 Start header area
          =============================================-->
@@ -89,6 +90,11 @@
                             <img src="assets/images/black-text.png" alt="bonik logo">
                         </a>
                     </div>
+                    <!-- mobile togle menu -->
+                    <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- mobile togle menu -->
                     <div class="address-content flex">
                         <!-- single item -->
                         <div class="address-single-item">
@@ -127,11 +133,11 @@
             <!-- logo area -->
             <div class="menu-area">
                 <div class="container">
-                    <div class="header-main-content flex-between">
-                        <div class="main-menu">
+                    <div class="header-main-content flex-between off-canvas-menu">
+                        <div class="main-menu ">
                             <ul class="flex">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="#">
                                         <span class="text-warp">
@@ -153,6 +159,7 @@
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
+                        
                         <div class="download-btn">
                             <a href="https://drive.google.com/file/d/1vClTorAMm_M5M9g6QA5tFb6k3cX1YbaD/view?usp=sharing" target="_blank">
                                 <span> </span>
@@ -163,6 +170,7 @@
                             </a>
                         </div>
                     </div>
+                    <div class="overlay" onclick="toggleMenu()"></div>
                 </div>
              </div>
         </section>
@@ -272,7 +280,7 @@
                                     font-weight: 500; 
                                     color: rgba(255, 255, 255, 0.85);
                                     border-width:0px;">
-                                    <span style="font-family:'Roboto' ;">
+                                    <span class="mobile-desc" style="font-family:'Roboto' ;">
                                         Bridging the gap between dreams and reality, we connect communities through our innovative engineering and construction solutions. Explore how we're building more than just structures.</span>
                                     </div>
                                 
@@ -301,7 +309,7 @@
                                     style="z-index:13; text-transform:uppercase; font-weight:700;">
                                     <a style="background: var(--secondary-text-color);
                                     color: rgb(255, 255, 255);
-                                    padding: 15px 30px;" href="about-1.html" class="site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                    padding: 15px 30px;" href="about-1.html" class="mobile-more-btn site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 
                                 </li>
@@ -396,7 +404,7 @@
                                     font-weight: 500; 
                                     color: rgba(255, 255, 255, 0.85);
                                     border-width:0px;">
-                                    <span style="font-family:'Roboto' ;">From concept to completion, we empower spaces and inspire futures through our transformative construction projects. Explore how we're shaping environments for generations to come.</span>
+                                    <span class="mobile-desc" style="font-family:'Roboto' ;">From concept to completion, we empower spaces and inspire futures through our transformative construction projects. Explore how we're shaping environments for generations to come.</span>
                                     </div>
                                 
                                     <!-- LAYER NR. 4 [ for readmore botton ] -->
@@ -424,7 +432,7 @@
                                     style="z-index:13; text-transform:uppercase; font-weight:700;">
                                     <a style="background: var(--secondary-text-color);
                                     color: rgb(255, 255, 255);
-                                    padding: 15px 30px;" href="about-1.html" class="site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                    padding: 15px 30px;" href="about-1.html" class="mobile-more-btn site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                     
                                     <!-- LAYER NR. 5 [ for botton ] -->
@@ -546,7 +554,7 @@
                                     font-weight: 500; 
                                     color: rgba(255, 255, 255, 0.85);
                                     border-width:0px;">
-                                    <span style="font-family:'Roboto' ;">Where precision meets passion, we create lasting legacies through cutting-edge engineering and meticulous craftsmanship.</span>
+                                    <span class="mobile-desc" style="font-family:'Roboto' ;">Where precision meets passion, we create lasting legacies through cutting-edge engineering and meticulous craftsmanship.</span>
                                     </div>
                                 
                                     <!-- LAYER NR. 4 [ for readmore botton ] -->
@@ -574,7 +582,7 @@
                                     style="z-index:13; text-transform:uppercase; font-weight:700;">
                                     <a style="background: var(--secondary-text-color);
                                     color: rgb(255, 255, 255);
-                                    padding: 15px 30px;" href="about-1.html" class="site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                    padding: 15px 30px;" href="about-1.html" class="mobile-more-btn site-button button-lg  m-r15">Read more  <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                     
                                     <!-- LAYER NR. 5 [ for botton ] -->
@@ -1045,86 +1053,10 @@
                        </div>
                     </div>
                 </div>
-                <!-- <div class="services-main-grid">
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                            <img src="assets/images/services/s1.png" alt="service image">
-                            <h5>Local Sand</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s2.png" alt="service image">
-                          <h5>Plaster Sand</h5>
-                         </div> 
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s3.png" alt="service image">
-                          <h5>Sylhet Sand</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s4.png" alt="service image">
-                          <h5>All Kind of Bricks</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                           <img src="assets/images/services/s5.png" alt="service image">
-                           <h5>Cement</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s6.png" alt="service image">
-                          <h5>Iron</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s7.png" alt="service image">
-                          <h5>Earth Supply</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s8.png" alt="service image">
-                          <h5>Manpower Supply</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s9.png" alt="service image">
-                          <h5>Stone (Local & Imported)</h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                           <img src="assets/images/services/s10.png" alt="service image">
-                           <h5>Crushed Concrete </h5>
-                        </div>
-                    </div> 
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s11.png" alt="service image">
-                          <h5>All Kind of Steel Shuttering </h5>
-                        </div>
-                    </div>
-                    <div class="services-single-item">
-                        <div class="service-inner-item">
-                          <img src="assets/images/services/s12.png" alt="service image">
-                          <h5>Steel Props</h5>
-                        </div>
-                    </div> 
-                </div>
-                <div class="service-btn">
-                    <a class="common-btn" href="#">See All Service</a>
-                </div> -->
+        
                 <div class="services-animated-main-grid">
                     <div class="services-single-item block">
-                        <div class="animate-content hovicon effect-4 sub-a">
+                        <div class="animate-content hovicon effect-4 sub-b">
                             <div class="service-inner-item ">
                                 <img src="assets/images/services/s1.png" alt="service image">
                                 <h5>Local Sand</h5>
@@ -1140,7 +1072,7 @@
                          </div>
                     </div>
                     <div class="services-single-item">
-                        <div class="animate-content hovicon effect-4 sub-a">
+                        <div class="animate-content hovicon effect-4 sub-b">
                         <div class="service-inner-item">
                           <img src="assets/images/services/s3.png" alt="service image">
                           <h5>Sylhet Sand</h5>
@@ -1156,7 +1088,7 @@
                         </div>
                     </div>
                     <div class="services-single-item">
-                        <div class="animate-content hovicon effect-4 sub-a">
+                        <div class="animate-content hovicon effect-4 sub-b">
                         <div class="service-inner-item">
                            <img src="assets/images/services/s5.png" alt="service image">
                            <h5>Cement</h5>
@@ -1172,7 +1104,7 @@
                         </div>
                     </div>
                     <div class="services-single-item">
-                        <div class="animate-content hovicon effect-4 sub-a">
+                        <div class="animate-content hovicon effect-4 sub-b">
                         <div class="service-inner-item">
                           <img src="assets/images/services/s7.png" alt="service image">
                           <h5>Earth Supply</h5>
@@ -1188,7 +1120,7 @@
                         </div>
                     </div>
                     <div class="services-single-item">
-                        <div class="animate-content hovicon effect-4 sub-a">
+                        <div class="animate-content hovicon effect-4 sub-b">
                         <div class="service-inner-item">
                           <img src="assets/images/services/s9.png" alt="service image">
                           <h5>Stone (Local & Imported)</h5>
@@ -1496,7 +1428,7 @@
          <button id="backToTopBtn">
             <span><i class="fas fa-angle-up"></i></span>
         </button>
-
+        </div>
 
         <!-- Js Files -->
         <!-- Modernizr -->

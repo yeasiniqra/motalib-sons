@@ -327,6 +327,9 @@ h5 {
 	margin-bottom: 10px;
 }
 
+.all-wapper{
+	overflow: hidden !important;
+}
 /************ Header Area Css *************/
 .header-area {
    position: absolute;
@@ -424,7 +427,13 @@ h5 {
 	font-size: 16px;
 	font-style: normal;
    color: #fff;
+   transition: 0.5s;
 }
+.main-menu > ul li:hover a{
+	color: var(--secondary-text-color);
+	transition: 0.5s;
+}
+
 .main-menu > ul > li {
 	margin-right: 25px;
    position: relative;
@@ -492,6 +501,9 @@ h5 {
 
 .main-menu > ul ul li {
 	border-bottom: 1px solid #ddd;
+	-webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 .main-menu > ul ul li:last-child {
 	border: none;
@@ -508,6 +520,13 @@ h5 {
    transform: scale(1.2);
 }
 
+.main-menu > ul > li ul.sub-menu > li:hover a {
+    padding-left: 10px;
+    color: var(--secondary-text-color);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
 
 .header-area.sticky-menu {
    position: fixed;
@@ -663,6 +682,31 @@ h5 {
 		transform: translateY(-100%);
 	}
 }
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--secondary-text-color);
+    font-size: 35px;
+    cursor: pointer;
+	display: none;
+}
+.menu-toggle i{
+	pointer-events: none;
+}
+
+/* .menu-toggle {
+    background: none;
+    border: none;
+    color: var(--secondary-text-color);
+    width: 50px;
+    height: 45px;
+    background: #000;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+} */
 
 
 

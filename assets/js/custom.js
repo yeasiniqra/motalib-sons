@@ -76,13 +76,13 @@ $(document).ready(function(){
 			items:3,
 				responsive:{
 				0:{
-					items:2
+					items:1
 				},
 				575:{
-					items:3
+					items:1
 				},
 				767:{
-					items:3
+					items:2
 				},
 				992:{
 					items:3
