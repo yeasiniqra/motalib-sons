@@ -1061,9 +1061,9 @@ h5 {
 
 
 /************ Services Area Css *************/
-.our-service-area{
+/* .our-service-area{
 	padding-top: 30px;
-}
+} */
 .services-main-grid {
 	display: grid;
 	grid-template-columns: repeat(5,1fr);
@@ -1273,6 +1273,7 @@ h5 {
 	gap: 40px;
 	margin-top: 35px;
 	align-items: center;
+	padding-bottom: 35px;
 }
 
 .about-left img {
@@ -1581,8 +1582,57 @@ h5 {
 	font-size: 20px;
 } 
 
+/* ==================================
+       other page CSS 
+   ==================================*/
 
 /************ Header Area Css *************/
+.other-page{
+	background: url('../images/main-slider/slider2/slide2.jpg') no-repeat scroll 0 0 / 100% 100%;
+	padding-top: 160px;
+	padding-bottom: 130px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	z-index: 1;
+}
+.other-page::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+.section-title.other-page-title {
+	text-align: left;
+}
+.other-page-title h2 {
+	color: #fff;
+	font-family: "Roboto";
+	font-weight: 900;
+	font-size: 45px;
+}
+.other-page-title h2 i {
+	font-size: 35px;
+}
+.extere-list-item {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.extere-list-item ul li {
+	margin-bottom: 15px;
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	color: #212121;
+}
+
+.extere-list-item ul li i{
+	color: var(--secondary-text-color);
+}
 /************ Header Area Css *************/
 /************ Header Area Css *************/
 
