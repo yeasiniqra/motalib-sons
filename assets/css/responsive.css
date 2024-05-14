@@ -203,7 +203,12 @@
         padding-top: 110px;
         padding-bottom: 110px;
     }
-
+    .contact-us-left .address-content {
+        display: block;
+    }
+    .contact-main-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
   
 }
 
@@ -331,6 +336,16 @@
     }
     .services-single-item img {
         height: 50px;
+    }
+    .contact-main-grid {
+        gap: 30px;
+    }
+    .reqest-inner-content-flex {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .reqest-inner-content-flex .custom-input {
+        flex: 0 0 100%;
     }
 
 

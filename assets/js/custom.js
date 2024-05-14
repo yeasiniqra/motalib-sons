@@ -1,14 +1,4 @@
 $(document).ready(function(){
-	// $().click(function(){
-	// 		$().slideToggle(700);
-	// 		return false;
-	// });	
-
-	// $('.').click(function(){
-	// 	$("").slideToggle(700);
-	// 	return false;
-	// })
-
 		// complete project slide
 		$('.project-main-grid').owlCarousel({
 			loop:true,

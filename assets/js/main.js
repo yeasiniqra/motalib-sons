@@ -1,6 +1,6 @@
 "use strict";
 
-//mobile menu JS
+// offCanvas mobile menu JS
 const toggleMenu = () => {
     const menu = document.querySelector('.off-canvas-menu');
     const overlay = document.querySelector('.overlay');
