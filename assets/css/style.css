@@ -953,10 +953,8 @@ h5 {
 	left: 50%;
 	transform: translateX(-50%);
 	/* background: var(--secondary-text-color); */
-	background: transparent;
 	width: 60%;
 	text-align: center;
-	/* border-top: 1px solid #ddd; */
 	height: 45px;
 	transition: 0.5s;
 	z-index: 2;
@@ -965,7 +963,7 @@ h5 {
 	border-radius: 5px;
 	overflow: hidden;
 }
-.detail-info-btn::before{
+/* .detail-info-btn::before{
 	position: absolute;
 	content:"";
 	bottom: -100%;
@@ -979,19 +977,56 @@ h5 {
 .detail-info-btn:hover::before{
 	bottom: 0%;
 	background: var(--secondary-text-color);
+} */
+
+.btn-three {
+	transition: all 0.5s;
 }
+.btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--secondary-text-color);
+	transition: all 0.3s;
+}
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.3s;
+	transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+
 
 .detail-info-btn a {
 	padding-top: 100px;
 	position: relative;
 	top: 13px;
-	color: var(--secondary-text-color);
+	color: #fff;
 	font-size: 18px;
 	font-weight: 700;
 	position: relative;
 }
 .detail-info-btn:hover a{
-	color: #fff;
+	color: var(--secondary-text-color);
 }
 
 .project-single-item:hover .detail-info-btn {
@@ -1010,6 +1045,8 @@ h5 {
     -o-transition: 0.8s;
     transition: 0.8s;
 }
+
+
 
 /************ Partner Area Css *************/
 .partner-area{
@@ -1811,7 +1848,51 @@ h5 {
     width: 100%;
 }
 
-/************ Header Area Css *************/
+/************ about Area Css *************/
+.about-page .about-main-grid {
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-start;
+}
+.about-page .about-left img {
+	height: auto;
+}
+
+.about-page .about-left {
+	position: relative;
+	padding: 95px;
+	padding-top: 0;
+	padding-left: 40px;
+	padding-bottom: 0px;
+}
+.about-page .about-left::after {
+	display: none;
+}
+
+.mission-main-grid {
+	display: grid;
+	grid-template-columns: 7fr 5fr;
+	gap: 40px;
+}
+
+.mission-content p{
+	color: #111;
+}
+.vision-heading p{
+	color: #fff;
+}
+
+
+.mission-content p {
+	margin-bottom: 20px;
+}
+.mission-quote {
+    background: var(--secondary-text-color);
+    padding: 30px 20px;
+}
+.vision-heading h3 {
+    color: #fff;
+}
+
 /************ Header Area Css *************/
 /************ Header Area Css *************/
 /************ Header Area Css *************/
