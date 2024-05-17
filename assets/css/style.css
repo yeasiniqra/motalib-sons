@@ -1867,6 +1867,16 @@ h5 {
 .about-page .about-left::after {
 	display: none;
 }
+.about-page .about-left::before {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	top: -50px;
+	right: 0;
+	background: var(--secondary-text-color);
+	z-index: -1;
+}
 
 .mission-main-grid {
 	display: grid;
@@ -1876,9 +1886,11 @@ h5 {
 
 .mission-content p{
 	color: #111;
+	text-align: justify;
 }
 .vision-heading p{
 	color: #fff;
+	text-align: justify;
 }
 
 
@@ -1892,6 +1904,51 @@ h5 {
 .vision-heading h3 {
     color: #fff;
 }
+
+.core-value-main-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	padding-top: 40px;
+}
+.s-icons img {
+	max-width: 100%;
+	height: 70px;
+}
+.core-value-item p {
+	color: #212121;
+}
+.core-value-item {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	padding: 30px 15px;
+	text-align: center;
+	border: 1px solid #ddd;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	background: #fff;
+	position: relative;
+}
+.core-value-item h3 {
+	color: #212121;
+	margin-bottom: 10px;
+}
+.count-serv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--secondary-text-color);
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 0px 0px 20px 0px;
+}
+.count-serv h1 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+}
+
 
 /************ Header Area Css *************/
 /************ Header Area Css *************/
