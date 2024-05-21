@@ -439,9 +439,13 @@ h5 {
 .main-menu > ul > li.active a {
 	color: var(--secondary-text-color);
 }
-.header-area.sticky-menu .main-menu > ul > li.active a {
+.header-area.sticky-menu .main-menu > ul > li.active > a {
 	color: var(--secondary-text-color);
 }
+.main-menu > ul > li > ul > li.active a {
+    color: var(--secondary-text-color) !important;
+}
+
 
 .main-menu > ul li:hover a{
 	color: var(--secondary-text-color);
@@ -1965,7 +1969,10 @@ h5 {
 .running-project-main-grid {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
+	gap: 8px;
+	overflow: hidden;
 }
+
 
 .project-single-items{
 	position: relative;
@@ -1973,7 +1980,31 @@ h5 {
 }
 .more-cnt p {
 	color: #fff;
+	text-align: justify;
 }
+.more-cnt ul {
+	margin: 25px 0px;
+}
+.more-cnt ul li {
+	color: #fff;
+	margin: 7px 0px;
+}
+.more-cnt ul li span i {
+	font-size: 9px;
+	position: relative;
+	top: -1px;
+}
+
+.hide-in-mob .common-btn:hover {
+	color: #fff;
+	transition: 0.5s;
+}
+
+.hide-in-mob .common-btn {
+	font-size: 15px;
+	padding: 13px 20px;
+}
+
 
 .project-single-items .box{
 	position: relative;
@@ -2000,6 +2031,13 @@ h5 {
 .project-single-items .b-5 {
 	background: url("../images/building-structure-md.webp") no-repeat center;
 }
+.project-single-items .b-6 {
+	background: url("../images/building-structure-md.webp") no-repeat center;
+}
+.project-single-items .b-7 {
+	background: url("../images/railway-md.webp") no-repeat center;
+}
+
 .service-expand {
 	position: absolute;
 	width: 100%;
@@ -2044,6 +2082,18 @@ h5 {
 	left: 0;
 	bottom: 0;
 }
+.project-single-items .b-6 .service-expand {
+	background: url("../images/road-highway-1.webp") no-repeat center;
+	background-size: cover;
+	right: 0;
+	bottom: 0;
+}
+.project-single-items .b-7 .service-expand {
+	background: url("../images/railway-md.webp") no-repeat center;
+	background-size: cover;
+	right: 0;
+	bottom: 0;
+}
 
 
 
@@ -2070,11 +2120,21 @@ h5 {
 }
 
 .service-expand:hover {
-	width: 187%;
+	width: 185.5%;
 	height: 187%;
 	padding: 25px;
 	z-index: 99;
 }
+.project-single-items .b-2 .service-expand:hover {
+	height: 92%;
+}
+.mt-5{
+	margin-top: 7.5px;
+}
+.mb-5{
+	margin-bottom: 7.5px;
+}
+
 .service-expand:hover .service-tilte {
 	position: relative;
 	top: auto;
@@ -2096,6 +2156,11 @@ h5 {
 	display: block;
 	padding-top: 100%;
 }
+
+.project-single-items .b-2::before {
+	padding-top: 203%;
+}
+
 .service-expand a h4 {
     color: #fff;
     font-size: 30px;
