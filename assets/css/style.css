@@ -1161,8 +1161,8 @@ h5 {
 .services-single-item {
 	text-align: center;
 	transition: 0.5s;
-	width: 200px;
-	height: 200px;
+	width: 212px;
+	height: 212px;
 	text-align: center;
 	border-radius: 50%;
 	background: #fff;
@@ -1170,6 +1170,7 @@ h5 {
 	transition: 300ms;
 	display: inline-block;
 	position: relative;
+	margin: 0 auto;
 }
 
 /* .services-single-item:after {
@@ -1248,14 +1249,14 @@ h5 {
 
 
 .services-animated-main-grid{
-	/* display: grid;
-	grid-template-columns: repeat(5,1fr); */
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
 	gap: 25px;
 	margin-top: 65px;
 	margin-bottom: 60px;
 	grid-row-gap: 50px;
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
 	justify-content: space-between;
 }
 
@@ -1289,8 +1290,8 @@ h5 {
 
 /* Effect 4 */
 .hovicon.effect-4 {
-	width: 200px;
-	height: 200px;
+	width: 212px;
+	height: 212px;
 	/* box-shadow: 0 0 0 4px rgba(255, 255, 255, 1); */
 	box-shadow: 0 0 0 2px var(--secondary-text-color);
 }
@@ -1505,6 +1506,10 @@ h5 {
 }
 .footer-content .main-menu ul.flex li:hover a{
 	color: #fff;
+}
+
+ .footer-content .main-menu > ul > li:last-child {
+    margin-right: 25px;
 }
 
 .footer-content > ul > li:first-child{
@@ -2178,7 +2183,54 @@ h5 {
 }
 
 
-/************ Header Area Css *************/
+/************ Detail information Area Css *************/
+.detail-information-area{
+	padding-bottom: 40px;
+}
+
+.detail-info-img img {
+	height: 400px;
+	object-fit: cover;
+}
+
+.responsive-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+.responsive-table th, .responsive-table td {
+	/* border: 1px solid #ddd; */
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #f1c4c4;
+}
+.responsive-table th {
+	color: #333;
+}
+.responsive-table tr:nth-child(odd) {
+	/* background-color: #f9f9f9; */
+	background-color: #e1cdcd;
+}
+.responsive-table tr:hover {
+	background-color: #f1f1f1;
+}
+.project-details-info-grid h2 {
+	text-align: center;
+	font-size: 40px;
+	color: #232323;
+	padding-bottom: 30px;
+}
+
+.project-details-info-grid p{
+	color: #212121;
+	text-align: justify;
+}
+.project-details-info-area{
+	padding-bottom: 40px;
+}
+
+
+
 /************ Header Area Css *************/
 /************ Header Area Css *************/
 /************ Header Area Css *************/

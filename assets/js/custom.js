@@ -1,5 +1,5 @@
 $(document).ready(function(){
-		// complete project slide
+		// complete project slider JS
 		$('.project-main-grid').owlCarousel({
 			loop:true,
 			margin:true,
@@ -27,7 +27,7 @@ $(document).ready(function(){
 			}
 		})
 
-		// partner project slide 
+		// partner slider JS 
 		$('.partner-main-grid').owlCarousel({
 			loop:true,
 			margin:false,
@@ -55,7 +55,7 @@ $(document).ready(function(){
 			}
 		})
 
-		// testmonial project slide 
+		// testmonial slider JS 
 		$('.testmonial-main-grid').owlCarousel({
 			loop:true,
 			margin:false,
@@ -79,6 +79,34 @@ $(document).ready(function(){
 				},
 				1200:{
 					items:3
+				}
+			}
+		})
+
+		// testmonial slider JS
+		$('.detail-info-slider').owlCarousel({
+			loop:true,
+			margin:false,
+			nav:false,
+			autoplay:true,
+			autoplayTimeout:5000,
+			dots:false,
+			items:1,
+				responsive:{
+				0:{
+					items:1
+				},
+				575:{
+					items:1
+				},
+				767:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
 				}
 			}
 		})

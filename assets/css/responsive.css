@@ -14,6 +14,9 @@
     .mission-main-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .services-animated-main-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -224,6 +227,40 @@
     .mission-main-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .services-animated-main-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .running-project-main-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service-expand:hover {
+        width: 188%;
+        height: 188%;
+    }
+    .project-single-items .b-2::before {
+        padding-top: 202%;
+    }
+    .project-single-items .b-3 .service-expand {
+        top: 0;
+        left: 0;
+    }
+    .project-single-items .b-6 .service-expand {
+        left: 0;
+    }
+    .footer-single-item.footer_widget_3 {
+        margin-left: 0px;
+    }
+    .footer-single-item.footer_widget_2 {
+        margin-left: 0px;
+    }
+    .detail-info-img img {
+        height: auto;
+    }
+    small.nav-arrow {
+        position: absolute;
+        right: 5px;
+    }
+
 }
 
 @media all and (max-width: 767px) {
@@ -380,6 +417,44 @@
         margin-top: 0px;
         margin-bottom: 10px;
     }
+    .running-project-main-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-expand:hover {
+        width: 88%;
+        height: 87%;
+    }
+    .more-cnt p {
+        font-size: 12px;
+    }
+    .more-cnt ul {
+        margin: 10px 0px;
+    }
+    .more-cnt ul li {
+        font-size: 12px;
+    }
+    .service-expand a h4 {
+        font-size: 24px;
+    }
+    .hide-in-mob .common-btn {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .project-details-info-grid h2 {
+        font-size: 21px;
+       padding-bottom: 15px;
+    }
+    .responsive-table th, .responsive-table td {
+        padding: 8px 7px;
+        font-size: 14px;
+    }
+    .detail-information-area {
+        padding-bottom: 30px;
+    }
+
+
+
+
 }
 
 @media all and (max-width: 575px) {
