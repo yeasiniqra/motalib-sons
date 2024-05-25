@@ -48,7 +48,6 @@ window.addEventListener('scroll', function() {
 });
 
 //counter up JS
-
 const c = (s, st, e, d) => {
   const el = document.querySelector(s);
   if (!el) {
