@@ -539,6 +539,9 @@ h5 {
    -ms-transform: scale(1.2);
    transform: scale(1.2);
 }
+.header-area.sticky-menu .main-menu > ul li:hover > ul {
+	top: 50px;
+}
 
 .main-menu > ul > li ul.sub-menu > li:hover a {
     padding-left: 10px;
@@ -959,10 +962,10 @@ h5 {
 }
 
 .detail-info-btn {
-	position: absolute;
-	bottom: -62px;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
+	bottom: 35px;
+	/* left: 50%;
+	transform: translateX(-50%); */
 	/* background: var(--secondary-text-color); */
 	width: 60%;
 	text-align: center;
@@ -973,6 +976,7 @@ h5 {
 	border: 2px solid var(--secondary-text-color);
 	border-radius: 5px;
 	overflow: hidden;
+	margin: 0 auto;
 }
 /* .detail-info-btn::before{
 	position: absolute;
@@ -1040,10 +1044,10 @@ h5 {
 	color: var(--secondary-text-color);
 }
 
-.project-single-item:hover .detail-info-btn {
+/* .project-single-item:hover .detail-info-btn {
 	bottom: 15px;
 	transition: 0.5s;
-}
+} */
 
 
 

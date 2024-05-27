@@ -4,7 +4,7 @@ $(document).ready(function(){
 			loop:true,
 			margin:true,
 			nav:true,
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout:4500,
 			dots:false,
 			items:3,
@@ -83,7 +83,7 @@ $(document).ready(function(){
 			}
 		})
 
-		// testmonial slider JS
+		// details info slider JS
 		$('.detail-info-slider').owlCarousel({
 			loop:true,
 			margin:false,
