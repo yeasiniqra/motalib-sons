@@ -529,5 +529,38 @@
 
         <!-- REVOLUTION SLIDER SCRIPT FILES -->
         <script src="assets/js/rev-script-4.js"></script>
+          <!-- JS for form Submit -->
+        <script>
+            $(document).ready(function() {
+                $('#contact-form').on('submit', function(event) {
+                    event.preventDefault();
+
+                    var formData = {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        phone: $('#phone').val(),
+                        message: $('#textarea').val()
+                    };
+
+                    $.ajax({
+                        type: 'POST',
+                        url: 'send_mail.php',
+                        data: formData,
+                        dataType: 'json',
+                        encode: true,
+                        success: function(response) {
+                            if (response.success) {
+                                alert('Message sent successfully.');
+                                // Reset the form
+                                $('#contact-form')[0].reset();
+                            } else {
+                                alert('Failed to send message.');
+                            }
+                        }
+                    });
+                });
+            });
+
+        </script>
     </body>
 </html>
