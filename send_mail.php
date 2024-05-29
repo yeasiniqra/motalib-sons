@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div style='width: 100%; padding: 20px; background-color: #f4f4f4;'>
                 <div style='max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);'>
                     <div style='text-align: center; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;'>
-                        <h1 style='margin: 0; font-size: 24px; color: #0073e6;'>New Contact Form Submission</h1>
+                        <h1 style='margin: 0; font-size: 25px; color: #0073e6;'>New Contact Form Submission</h1>
                     </div>
                     <div style='margin-bottom: 20px;'>
                         <p style='margin: 5px 0;'><strong>Name:</strong> $name</p>
@@ -63,9 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $body, $headers)) {
         echo json_encode(['success' => true]);
     } else {
-        echo json_encode(['success' => false, 'message' => 'Failed to send email.']);
+        echo json_encode(['success' => false, 'message' => 'Failed to send email!!!.']);
     }
 } else {
-    echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
+    echo json_encode(['success' => false, 'message' => 'Invalid request method!!!.']);
 }
 ?>
