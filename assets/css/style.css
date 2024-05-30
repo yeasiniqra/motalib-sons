@@ -2235,8 +2235,37 @@ h5 {
 
 /************ Sister Concen Area Css *************/
 
+.sister-concen-single-item {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 40px;
+	align-items: center;
+}
+.concen-content h2 {
+	font-size: 45px;
+	color: #212121;
+}
+.concen-sm i {
+	font-size: 30px;
+	margin-right: 15px;
+	color: var(--secondary-text-color);
+}
+.concen-content-flex {
+	align-items: center;
+	padding: 25px 0px;
+}
+
+.concen-image img {
+	width: 100%;
+	height: 480px;
+	object-fit: cover;
+}
+
 .concen-content P{
 	color: #212121;
+}
+.mt-50{
+	margin-top: 50px;
 }
 
 /************ Header Area Css *************/
