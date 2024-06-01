@@ -2213,7 +2213,8 @@ h5 {
 }
 .responsive-table tr:nth-child(odd) {
 	/* background-color: #f9f9f9; */
-	background-color: #e1cdcd;
+	/* background-color: #e1cdcd; */
+	background-color: #9DC5D5;
 }
 .responsive-table tr:hover {
 	background-color: #f1f1f1;
@@ -2263,6 +2264,7 @@ h5 {
 
 .concen-content P{
 	color: #212121;
+	text-align: justify;
 }
 .mt-50{
 	margin-top: 50px;

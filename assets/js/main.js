@@ -114,5 +114,22 @@ backToTopBtn.addEventListener("click", () => {
 });
 
 
+//download pdf JS
 
+document.getElementById('downloadBtn').addEventListener('click', function () {
+  const link = document.createElement('a');
+  link.href = 'assets/pdf/Profile-2024-Final-march.pdf';  // Path to your PDF file
+  link.download = 'Motalib & Sons.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
 
+document.getElementById('downloadBtn2').addEventListener('click', function () {
+  const link = document.createElement('a');
+  link.href = 'assets/pdf/Profile-2024-Final-march.pdf';  // Path to your PDF file
+  link.download = 'Motalib & Sons.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
