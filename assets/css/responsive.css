@@ -256,6 +256,18 @@
         position: absolute;
         right: 5px;
     }
+    .sister-concen-single-item {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .concen-image img {
+        height: auto;
+    }
+    .concen-content h2 {
+        font-size: 30px;
+    }
+    .concen-image {
+        order: -1;
+    }
 
 }
 
@@ -447,9 +459,12 @@
     .detail-information-area {
         padding-bottom: 30px;
     }
-
-
-
+    .concen-content h2 {
+        font-size: 20px;
+    }
+    .concen-content-flex {
+        padding: 20px 0px;
+    }
 
 }
 
