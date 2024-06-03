@@ -28,16 +28,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <meta charset='UTF-8'>
             <title>$subject</title>
         </head>
-        <body style='font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0;'>
-            <div style='width: 100%; padding: 20px; background-color: #f4f4f4;'>
+        <body style='font-family: Arial, sans-serif; line-height: 1.5; color: #333; margin: 0; padding: 0;'>
+            <div style='width: 100%; padding: 20px; background-color: #f4f4f4;'> 
                 <div style='max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);'>
                     <div style='text-align: center; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;'>
                         <h1 style='margin: 0; font-size: 25px; color: #0073e6;'>New Contact Form Submission!</h1>
                     </div>
-                    <div style='margin-bottom: 20px;'>
-                        <p style='margin: 5px 0;'><strong>Name:</strong> $name</p>
-                        <p style='margin: 5px 0;'><strong>Email:</strong> $email</p>
-                        <p style='margin: 5px 0;'><strong>Phone:</strong> $phone</p>
+                    <div style='margin-bottom: 20px; margin-top:3px'>
+                        <p style='margin: 5px 0;'><strong>Name: </strong> $name</p>
+                        <p style='margin: 5px 0;'><strong>Email: </strong> $email</p>
+                        <p style='margin: 5px 0;'><strong>Phone: </strong> $phone</p>
                     </div>
                     <div style='background-color: #f9f9f9; padding: 15px; border-radius: 5px; border: 1px solid #ddd;'>
                         <p style='margin: 0;'><strong>Message:</strong></p>
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Set content type as HTML and proper email headers
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= "From: Motalib & Sons <no-reply@yourdomain.com>\r\n";
+    $headers .= "From: Motalib & Sons <no-reply@motalibsons.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
